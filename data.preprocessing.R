@@ -3,14 +3,8 @@
 rm(list = ls())
 
 # Import and load packages
-required_packages <- c("data.table", "tidyverse")
-
-packageCheck <- lapply(required_packages, FUN = function(x) {
-  if(!require(x, character.only = TRUE)) {
-    install.packages(x, dependencies = TRUE)
-    library(x, character.only = TRUE)
-  }
-})
+library(data.table)
+library(tidyverse)
 
 # Set working directory 
 #setwd("") Input your working directory here.
